@@ -2,8 +2,10 @@
 
 p {
     font-size: 0.05em;
+    color: #000;
     width: 50px;
 }
+
 
 .width {
     width: 10%;
