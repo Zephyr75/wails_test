@@ -1,0 +1,52 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+p {
+    font-size: 0.05em;
+    width: 50px;
+}
+
+.width {
+    width: 10%;
+    display: flex;
+}
+
+.height {
+    height: 50px;
+    display: flex;
+}
+
+.absolute {
+    position: absolute;
+    top: 5vh;
+    left: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.full {
+    width: 100%;
+    height: 100%;
+}
+
+.splitpanes__pane {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 5em;
+  }
