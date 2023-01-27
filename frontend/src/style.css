@@ -1,9 +1,17 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
 p {
-    font-size: 0.05em;
+    font-size: 1rem;
     color: #000;
     width: 50px;
+}
+
+div {
+    font-size: 1rem;
+}
+
+.white {
+    color: #fff;
 }
 
 
@@ -51,4 +59,4 @@ p {
     font-family: Helvetica, Arial, sans-serif;
     color: rgba(255, 255, 255, 0.6);
     font-size: 5em;
-  }
+}
