@@ -15,7 +15,8 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "splitpanes": "^3.1.5",
-    "vue": "^3.2.37"
+    "vue": "^3.2.45",
+    "vue-p5": "^0.8.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.3",
