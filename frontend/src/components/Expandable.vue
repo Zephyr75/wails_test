@@ -7,7 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
 	let cardToggles = document.getElementsByClassName('card-toggle');
 	for (let i = 0; i < cardToggles.length; i++) {
 		cardToggles[i].addEventListener('click', e => {
-			e.currentTarget.parentElement.parentElement.childNodes[3].classList.toggle('is-hidden');
+			console.log(3);
+			e.currentTarget.parentElement.parentElement.childNodes[1].classList.toggle('is-hidden');
+			// update fa-caret-down to fa-caret-up on current target
+			e.currentTarget.childNodes[0].icon = e.currentTarget.childNodes[0].icon.iconName === 'fa-caret-down' ? 'fa-caret-up' : 'fa-caret-down';
+
+
+
 		});
 	}
 });
@@ -18,20 +24,35 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <main>
         <div class="container wid">
-            <div class="card">
-                <header class="card-header">
-                    <a class="card-header-icon card-toggle">
-                        <font-awesome-icon icon="fa-solid fa-user-secret" />
-                    </a>
-                    <p class="card-header-title">Card #1</p>
-                </header>
-                <div class="card-content is-hidden">
-                    <div class="content">
-                        Content goes here <small>Small text</small>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<div class="card is-fullwidth">
+			<header class="card-header">
+				<a class="card-header-icon card-toggle">
+					<font-awesome-icon icon="fa-caret-down" size="2x"/>
+				</a>
+				<p class="card-header-title">Rigidbody</p>
+			</header>
+			<div class="card-content is-hidden">
+				<div class="content">
+					Content goes here <small>Small text</small>
+				</div>
+			</div>
+		</div>
+
+		<div class="card is-fullwidth">
+			<header class="card-header">
+				<a class="card-header-icon card-toggle">
+					<font-awesome-icon icon="fa-solid fa-caret-up" size="2x"/>
+				</a>
+				<p class="card-header-title">Collider</p>
+			</header>
+			<div class="card-content is-hidden">
+				<div class="content">
+					Some more content. Look at all this whitespace. <small>(Unless you are on mobile)</small>
+				</div>
+			</div>
+		</div>
+	</div>
+
     </main>
 
 
@@ -39,9 +60,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <style>
 
+.big {
+    
+}
+
 .wid {
 
-    width: 50%;
+    width: 90%;
 }
 
 </style>

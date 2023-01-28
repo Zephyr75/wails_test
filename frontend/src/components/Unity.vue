@@ -4,6 +4,7 @@ import { Splitpanes, Pane } from 'splitpanes'
 import 'splitpanes/dist/splitpanes.css'
 import Dah from './Dah.vue';
 import Inspector from './Inspector.vue';
+import Test from './Test.vue';
 
 </script>
 

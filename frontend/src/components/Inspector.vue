@@ -2,6 +2,7 @@
 
 import Dropdown from './Dropdown.vue';
 import Expandable from './Expandable.vue';
+import Test from './Test.vue';
 
 </script>
 
@@ -15,8 +16,10 @@ import Expandable from './Expandable.vue';
                 <li><a>Dashboard</a></li>
                 <li><a>Customers</a></li>
                 <li><a>Team Settings</a></li>
-                <li><a>Invitations</a></li>
                 <li><Expandable/></li>
+                <li>
+                    <button class="button full">+</button>
+                </li>
             </ul>
         </aside>
     </main>
