@@ -4,7 +4,7 @@ import { Splitpanes, Pane } from 'splitpanes'
 import 'splitpanes/dist/splitpanes.css'
 import Dah from './Dah.vue';
 import Inspector from './Inspector.vue';
-import Test from './Test.vue';
+import Viewport from './Viewport.vue';
 import Assets from './Assets.vue';
 import Hierarchy from './Hierarchy.vue';
 
@@ -21,7 +21,7 @@ import Hierarchy from './Hierarchy.vue';
                                 <Hierarchy/>
                             </pane>
                             <pane class="background">
-                                <Dah/>
+                                <Viewport/>
                             </pane>
                         </splitpanes>
                     </pane>
