@@ -10,7 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
 			console.log(3);
 			e.currentTarget.parentElement.parentElement.childNodes[1].classList.toggle('is-hidden');
 			// update fa-caret-down to fa-caret-up on current target
-			e.currentTarget.childNodes[0].icon = e.currentTarget.childNodes[0].icon.iconName === 'fa-caret-down' ? 'fa-caret-up' : 'fa-caret-down';
+			e.currentTarget.childNodes[0].classList.toggle('is-hidden');
+			e.currentTarget.childNodes[1].classList.toggle('is-hidden');
+			// e.currentTarget.childNodes[0].childNodes[1].classList.toggle('is-hidden');
+			// e.currentTarget.childNodes[1].classList.toggle('is-hidden');
+			// e.currentTarget.childNodes[0].childNodes[1].classList.toggle('is-hidden');
 
 
 
@@ -27,7 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		<div class="card is-fullwidth">
 			<header class="card-header">
 				<a class="card-header-icon card-toggle">
-					<font-awesome-icon icon="fa-caret-down" size="2x"/>
+					<font-awesome-icon icon="fa-solid fa-caret-down" size="2x"/>
+					<font-awesome-icon icon="fa-solid fa-caret-up" size="2x" class="is-hidden"/>
 				</a>
 				<p class="card-header-title">Rigidbody</p>
 			</header>
