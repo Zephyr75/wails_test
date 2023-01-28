@@ -5,6 +5,8 @@ import 'splitpanes/dist/splitpanes.css'
 import Dah from './Dah.vue';
 import Inspector from './Inspector.vue';
 import Test from './Test.vue';
+import Assets from './Assets.vue';
+import Hierarchy from './Hierarchy.vue';
 
 </script>
 
@@ -15,13 +17,17 @@ import Test from './Test.vue';
                 <splitpanes horizontal>
                     <pane class="background">
                         <splitpanes style="height: 100vh">
-                            <pane class="background">5</pane>
+                            <pane class="background">
+                                <Hierarchy/>
+                            </pane>
                             <pane class="background">
                                 <Dah/>
                             </pane>
                         </splitpanes>
                     </pane>
-                    <pane class="background">3</pane>
+                    <pane>
+                        <Assets/>
+                    </pane>
                 </splitpanes>
             </pane>
             <pane>

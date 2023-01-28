@@ -8,20 +8,9 @@ import Test from './Test.vue';
 
 <template>
     <main>
-        <aside class="menu">
-            <p class="menu-label" style="color: #fff;">
-                Inspector
-            </p>
-            <ul class="menu-list">
-                <li><a>Dashboard</a></li>
-                <li><a>Customers</a></li>
-                <li><a>Team Settings</a></li>
-                <li><Expandable/></li>
-                <li>
-                    <button class="button full">+</button>
-                </li>
-            </ul>
-        </aside>
+        <h1 class="title">Inspector</h1>
+        <Expandable />
+        <button class="button">+</button>
     </main>
 </template>
 
